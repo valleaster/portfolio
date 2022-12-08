@@ -254,6 +254,20 @@ body {
 /* Introduction */
 .intro {
     min-height: 100vh;
+    animation: intro-load 1s ease-in-out 2.2s forwards;
+    opacity: 0;
+}
+
+@keyframes intro-load {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
 
 .smol {
@@ -588,7 +602,21 @@ h1 {
 /* Media queries */
 
 @media (min-width:1280px) {
+    :root{
+        --fs-xxxl: 6rem;
+        --fs-xxl: 3.5rem;
+        --fs-xl: 2.5rem;
+        --fs-l: 2.25rem;
+        --fs-m: 2rem;
+        --fs-s: 2rem;
+        --fs-xs: 1.6rem;
+        --fs-xxs: 1.3rem;
+        --fs-xxxs: 1.2rem;
+    }
     
+    .container-two .contact-title {
+        font-size: 4rem;
+    }
 }
 
 @media (max-width:1280px) {
@@ -720,23 +748,6 @@ h1 {
         animation: sidebar-load .7s ease-in-out 3.3s forwards;
     }
 
-    .intro {
-        animation: intro-load 1s ease-in-out 2.2s forwards;
-        opacity: 0;
-    }
-    
-    @keyframes intro-load {
-        0% {
-            transform: translateY(30px);
-            opacity: 0;
-        }
-    
-        100% {
-            transform: translateX(0px);
-            opacity: 1;
-        }
-    }
-
     .contact-deco-line {
         display: flex;
         width: 100%;
@@ -783,6 +794,20 @@ h1 {
     .hamburger {
         position: fixed;
         display: flex;
+        opacity: 0;
+        animation: hamburger-load .8s ease-in forwards;
+    }
+
+    @keyframes hamburger-load {
+        0% {
+            transform: translateY(-250%);
+            opacity: 1;
+        }
+    
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
 
     .navbar-links {
@@ -806,6 +831,10 @@ h1 {
 
     .sidebar a {
         display: none;
+    }
+
+    .intro {
+        animation: intro-load 1s ease-in-out .8s forwards;
     }
 
     .about-container {
@@ -880,6 +909,11 @@ h1 {
         padding: 0 12vw;
     }
 
+    .intro {
+        min-height: calc(100vh - 70px);
+        animation: intro-load 1s ease-in-out .5s forwards;
+    }
+
     .about-container {
         grid-template-rows: 1fr 1fr;
         gap: 20px;
@@ -901,4 +935,5 @@ h1 {
     .container-two .contact-title {
         font-size: 2.5rem;
     }
+
 }

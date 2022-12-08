@@ -1,7 +1,7 @@
 // Typing
 var typed = new Typed("#typed", {
     strings: ["Vallirie Easter.", "a Web Developer.", "a potato :)", "Vallirie Easter."],
-    startDelay: 2650,
+    startDelay: 1000,
     typeSpeed: 80,
     backSpeed: 65,
     loop: false
