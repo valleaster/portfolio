@@ -69,31 +69,23 @@ window.addEventListener('scroll', () => {
     document.querySelector(".navbar").classList.toggle("window-scroll", window.scrollY > 100);
 });
 
-// Mobile navbar (mostly)
+// Hamburger/navbar clicked with blurring effects
 const hamburgerButton = document.getElementsByClassName("hamburger")[0];
 const navbarLinks = document.getElementsByClassName("navbar-links")[0];
-const body = document.body;
+const blurEffects = document.getElementById('blur');
 const navbarLinksItems = document.querySelectorAll('.navbar-links a');
 
 hamburgerButton.addEventListener('click', () => {
     event.preventDefault();
-    body.classList.toggle('active');
     navbarLinks.classList.toggle('active');
+    blurEffects.classList.toggle('active');
 });
 
 navbarLinksItems.forEach((item) => {
     item.addEventListener('click', () => {
-        event.preventDefault();
-        const targetId = item.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        targetElement.scrollIntoView({ 
-            behavior: 'smooth', 
-            block: 'start', 
-            inline: 'nearest',
-            offset: 100,
-        });
+    //   event.preventDefault();
       navbarLinks.classList.toggle('active');
-      body.classList.toggle('active');
+      blurEffects.classList.remove('active');
     });
 });
 
