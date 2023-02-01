@@ -363,7 +363,7 @@ body {
 }
 
 @media (min-width:768px) {
-    .socials-mobile a {
+    .socials-mobile {
         display: none;
     }
 
