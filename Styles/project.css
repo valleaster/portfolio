@@ -1,0 +1,127 @@
+.project-main-con {
+    position: relative;
+    margin-top: 50px;
+}
+
+.project-deco-line {
+    display: flex;
+	width: 100%;
+    padding: 0 calc(100vw / 4.5);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.project-deco-line::before {
+    content: '';
+	border-top: 1.5px solid;
+	margin: 0 20px 0 auto;
+	flex: 1 0 20px;
+	color: var(--pink-color);
+}
+
+.project-deco-line::after {
+    content: '';
+	border-top: 1.5px solid;
+	margin: 0 auto 0 20px;
+	flex: 1 0 20px;
+	color: var(--pink-color);
+}
+
+.project {
+    margin-top: 50px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.projects {
+    background: transparent;
+    box-shadow: 0 0 0.3em var(--dullblue-color);
+    border-radius: 10px;
+    transition: .25s ease-in-out;
+    position: relative;
+    padding-bottom: 0;
+}
+
+.projects:hover {
+    box-shadow: inset 0 0.125em 0.125em var(--dullblue-color), 0 0 1em var(--dullblue-color);
+    transform: scale(1.01);
+}
+
+.projects:hover .project-info h4 {
+    color: var(--lightblue-color);
+    text-shadow: 0 0em 0.5em var(--babyblue-color);
+}
+
+.projects:hover .project-info p {
+    color: var(--text-color);
+}
+
+.projects:hover .project-links {
+    color: var(--text-color);
+}
+
+.project-img {
+    width: auto;
+    height: 180px;
+}
+
+.project-img::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 185px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(16,25,53,1) 8%, rgba(16,25,53,0.4) 40%, rgba(120,161,187,0.3) 100%);
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.projects:hover .project-img::after {
+    background: none;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.project-info {
+    padding: 2rem 1.5rem;
+    color: var(--text-color);
+}
+
+.project-info h4 {
+    font-size: var(--fs-xs);
+    margin-bottom: 5px;
+    transition: .15s ease-in;
+}
+
+.project-info p {
+    margin-bottom: 12px;
+    transition: .2s ease-in;
+    font-size: var(--fs-xxs);
+}
+
+.project-links {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: calc(var(--fs-xs) - 0.25rem);
+    margin: 0 15px;
+    transition: .2s ease-in;
+    font-weight: bold;
+}
+
+.project-links:hover {
+    color: var(--lightblue-color) !important;
+    text-shadow: 0 0 0.8em var(--lightblue-color);
+}

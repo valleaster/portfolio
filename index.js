@@ -75,15 +75,14 @@ const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 const blurEffects = document.getElementById('blur');
 const navbarLinksItems = document.querySelectorAll('.navbar-links a');
 
-hamburgerButton.addEventListener('click', () => {
-    event.preventDefault();
+hamburgerButton.addEventListener('click', (e) => {
+    e.preventDefault();
     navbarLinks.classList.toggle('active');
     blurEffects.classList.toggle('active');
 });
 
 navbarLinksItems.forEach((item) => {
-    item.addEventListener('click', () => {
-    //   event.preventDefault();
+    item.addEventListener('click', (e) => {
       navbarLinks.classList.toggle('active');
       blurEffects.classList.remove('active');
     });

@@ -8,9 +8,17 @@
       {
         "ignore": [
           "backdrop-filter",
-          "user-select"
+          "user-select",
+          "scroll-behavior"
         ]
       }
-    ]
+    ],
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ],
+    "disown-opener": "off"
   }
 }

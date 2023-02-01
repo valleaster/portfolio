@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Tic Tac Toe",
+        "description": "A game of tic tac toe built using Javascript.",
+        "image": "Projects/ttt.png",
+        "github": "#",
+        "link" : "#"
+    },
+    {
+        "title": "Black Jack",
+        "description": "Simple Black Jack created using HTML, CSS and Javascript.",
+        "image": "Projects/bj2.png",
+        "github": "#",
+        "link" : "#"
+    },
+    {
+        "title": "Grid Testimonials",
+        "description": "Completed a challenge from Frontend Mentor to learn CSS Grid.",
+        "image": "Projects/testimonial.png",
+        "github": "#",
+        "link" : "#"
+    },
+    {
+        "title": "Simple Calculator",
+        "description": "Used HTML, CSS and Javascript to create a simple calculator.",
+        "image": "Projects/calculator.png",
+        "github": "#",
+        "link" : "#"
+    },
+    {
+        "title": "e-Commerce ERD",
+        "description": "Generated an e-Commerce database and an entity relationship diagram.",
+        "image": "Projects/erd.png",
+        "github": "#",
+        "link" : "#"
+    },
+    {
+        "title": "Number Guessing Game",
+        "description": "Built a number guessing game using Javascript.",
+        "image": "Projects/number.jpg",
+        "github": "#",
+        "link" : "#"
+    }
+]

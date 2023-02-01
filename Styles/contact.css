@@ -1,0 +1,67 @@
+.contact-main-con {
+    height: 100vh;
+}
+
+.container-two .contact-title {
+    color: var(--pink-color);
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.contact-deco-line {
+    display: flex;
+    width: 100%;
+    padding: 0 calc(100vw / 6);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-deco-line::before {
+    content: '';
+    border-top: 1.5px solid;
+    margin: 0 20px 0 auto;
+    flex: 1 0 20px;
+    color: var(--pink-color);
+}
+
+.contact-deco-line::after {
+    content: '';
+    border-top: 1.5px solid;
+    margin: 0 auto 0 20px;
+    flex: 1 0 20px;
+    color: var(--pink-color);
+}
+
+.contact-container p {
+    margin: 20px;
+    color: var(--text-color);
+    font-size: var(--fs-xs);
+    line-height: 1.3;
+    padding: 10px 50px;
+}
+
+.message-btn-con {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.message-btn {
+    font-weight: bold;
+    font-size: var(--fs-xs);
+    background: var(--pink-color);
+    padding: 10px 50px;
+    width: max-content;
+    border-radius: 50px;
+}
+
+.message-btn a {
+    text-decoration: none;
+    color: var(--darkblue-color);
+
+}
+
+.message-btn:hover {
+    cursor: pointer;
+}

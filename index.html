@@ -5,11 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vallirie Easter</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- External css links -->
+    <link rel="stylesheet" href="Styles/intro.css">
+    <link rel="stylesheet" href="Styles/about.css">
+    <link rel="stylesheet" href="Styles/project.css">
+    <link rel="stylesheet" href="Styles/contact.css">
+    <link rel="stylesheet" href="Styles/styles.css">
+
+    <!-- Icon links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
+
 <body>
+
     <!-- Navigation Bar -->
     <nav class="navbar justify-content-end">
         <a href="#" class="hamburger">
@@ -26,6 +36,7 @@
             </ul>
         </div>
     </nav>
+
     <div class="container" id="blur">
         <!-- Socials Sidebar -->
         <nav class="sidebar">
@@ -39,9 +50,10 @@
             </ul>
         </nav>
         <nav class="vertical-line"></nav>
+
         <!-- Introduction -->
-        <div id="intro" class="container-one intro">
-            <span id="home"></span>
+        <span id="home"></span>
+        <section id="intro" class="container-one intro">
             <p class="smol">Hi, there!</p>
                 <h1>I'm <span id="typed" class="highlight"></span></h1>
                 <p class="caption">Passionate in building functional, snazzy looking and user-friendly websites.</p>
@@ -51,14 +63,15 @@
                         <span class="btn-icon btn-gen"><i class="fa-solid fa-download"></i></span>
                     </a>
                 </div>    
-        </div>
+        </section>
+
         <!-- About Section -->
-        <div class="container-one about-container scroll-effect">
+        <section class="container-one about-container scroll-effect">
             <span id="about"></span>
-            <div class="about-left">
-                <p class="title about-deco-line">About Me</p>
+            <article class="about-left">
+                <h3 class="title about-deco-line">About Me</h3>
                 <p class="subcaption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis suscipit autem, doloribus cupiditate minima repudiandae saepe ipsa voluptatibus esse nesciunt placeat vitae, laboriosam nemo dolorem impedit doloremque. Porro unde fugiat facilis optio, dolore necessitatibus iusto vitae, maxime sunt alias assumenda asperiores quam recusandae reprehenderit iure est, veritatis labore consequuntur aspernatur?</p>
-            </div>
+            </article>
             <div class="about-right">
                 <div class="skill">
                     <i class="fa-brands fa-html5 skill-icon"></i>
@@ -85,95 +98,67 @@
                     <p>SQL</p>
                 </div>
             </div>
-        </div>
+        </section>
+
         <!-- Project Section -->
-        <div class="container-two scroll-effect project-main-con">
+        <section class="container-two scroll-effect project-main-con">
             <span id="projects"></span>
-            <p class="title project-deco-line">Projects</p>
-            <div class="project project-container">
-                <div class="projects">
-                    <div class="project-img mask">
-                        <img src="Projects/ttt.png" alt="tic tac toe">
-                    </div>
-                    <div class="project-info">
-                        <h4>Tic Tac Toe</h4>
-                        <p>A game of tic tac toe built using Javascript.</p>
-                        <a href="#" class="project-links"><i class="uil uil-github-alt"></i></a>
-                        <a href="#" class="project-links"><i class="uil uil-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="projects">
-                    <div class="project-img">
-                        <img src="Projects/bj2.png" alt="black jack">
-                    </div>
-                    <div class="project-info">
-                        <h4>Black Jack</h4>
-                        <p>Simple Black Jack created using HTML, CSS and Javascript.</p>
-                        <a href="#" class="project-links"><i class="uil uil-github-alt"></i></a>
-                        <a href="#" class="project-links"><i class="uil uil-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="projects">
-                    <div class="project-img mask">
-                        <img src="Projects/testimonial.png" alt="grid testimonials">
-                    </div>
-                    <div class="project-info">
-                        <h4>Grid Testimonials</h4>
-                        <p>Completed a challenge from Frontend Mentor to learn CSS Grid.</p>
-                        <a href="#" class="project-links"><i class="uil uil-github-alt"></i></a>
-                    </div>
-                </div>
-                <div class="projects">
-                    <div class="project-img mask">
-                        <img src="Projects/calculator.png" alt="calculator">
-                    </div>
-                    <div class="project-info">
-                        <h4>Simple Calculator</h4>
-                        <p>Used HTML, CSS and Javascript to create a simple calculator.</p>
-                        <a href="#" class="project-links"><i class="uil uil-github-alt"></i></a>
-                        <a href="#" class="project-links"><i class="uil uil-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="projects">
-                    <div class="project-img mask">
-                        <img src="Projects/erd.png" alt="e-commerce erd">
-                    </div>
-                    <div class="project-info">
-                        <h4>e-Commerce ERD</h4>
-                        <p>Generated an e-Commerce database and an entity relationship diagram.</p>
-                        <a href="#" class="project-links"><i class="uil uil-github-alt"></i></a>
-                    </div>
-                </div>
-                <div class="projects">
-                    <div class="project-img mask">
-                        <img src="Projects/number.jpg" alt="number guessing game">
-                    </div>
-                    <div class="project-info">
-                        <h4>Number Guessing Game</h4>
-                        <p>Built a number guessing game using Javascript.</p>
-                        <a href="#" class="project-links"><i class="uil uil-github-alt"></i></a>
-                        <a href="#" class="project-links"><i class="uil uil-external-link-alt"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <h3 class="title project-deco-line">Projects</h3>
+            <div class="project project-container" id="project-con"></div>
+        </section>
+
         <!-- Contact Section -->
-        <div id="contact" class="container-two scroll-effect contact-main-con">
-            <p class="contact-title contact-deco-line">Get in Touch</p>
+        <section class="container-two scroll-effect contact-main-con">
+            <span id="contact"></span>
+            <h3 class="contact-title contact-deco-line">Get in Touch</h3>
             <div class="contact-container">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis a cumque numquam ipsam suscipit aut fuga, dolorem praesentium perferendis laborum.</p>
                 <div class="message-btn-con">
                     <div class="message-btn"><a href="mailto:vallirieeasterjohnson@gmail.com">Send Messsage</a></div>
                 </div>
             </div>
-        </div>
+        </section>
+
         <!-- Mobile Socials -->
         <div class="socials-mobile scroll-effect">
-            <a href="#" class="project-links"><i class="uil uil-github-alt"></i></a>
+            <a href="https://github.com/valleaster" class="project-links"><i class="uil uil-github-alt"></i></a>
             <a href="#" class="project-links"><i class="uil uil-linkedin-alt"></i></a>
         </div>
+
     </div>
+
+    <!-- External js link and typed js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="index.js"></script>
+
+    <!-- Project jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+            url: "projects.json",
+            dataType: "json",
+            success: function(data) {
+                var projectContainer = $("#project-con");
+                $.each(data, function(index, project) {
+                var projectArticle = 
+                    "<div class='projects'>" +
+                        "<div class='project-img mask'>" +
+                            "<img src='" + project.image + "' alt='" + project.title + "'>" +
+                        "</div>" +
+                        "<article class='project-info'>" +
+                            "<h4>" + project.title + "</h4>" +
+                            "<p>" + project.description + "</p>" +
+                            "<a href='" + project.github + "' class='project-links'><i class= 'uil uil-github-alt'></i></a>" +
+                            "<a href='" + project.link + "' class='project-links'><i class= 'uil uil-external-link-alt'></i></a>"
+                        "</article>" +
+                    "</div>";
+                
+                projectContainer.append(projectArticle);
+                });
+            }
+            });
+        });
+    </script>
 </body>
 </html>
